@@ -2,11 +2,16 @@
 /*************
 *** Default ***
 *************/
+
+/* https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   vertical-align: baseline;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 ol,
@@ -22,8 +27,9 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0%;
 
   border: solid #eaeaea 1px;
 }
@@ -108,4 +114,65 @@ nav > ul > li {
   min-width: 4rem;
   font-size: 0.875rem;
   line-height: 1.875rem;
+
+  color: #524fa1;
+}
+
+/*************
+*** Page1 ***
+*************/
+
+section {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 4rem);
+
+  margin: 0;
+  padding: 0;
+}
+
+.page1_backImg {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+
+  background-image: url('home-fullcover.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+section .page1_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(82rem);
+  padding: 0px 2.5rem;
+
+  box-sizing: border-box;
+}
+
+section .page1_text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1.4;
+  text-align: left;
+  user-select: auto;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
