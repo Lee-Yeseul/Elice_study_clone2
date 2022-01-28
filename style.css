@@ -226,14 +226,14 @@ section {
   padding-top: 8rem;
   padding-bottom: 12.5rem;
 }
-section > .page2_container {
+.page2_container {
   margin-left: auto;
   margin-right: auto;
   max-width: calc(82rem);
   width: 100%;
   padding: 0px 2.5rem;
 }
-section > .page2_container .page2_content {
+.page2_container .page2_content {
   position: relative;
   width: 100%;
 
@@ -285,4 +285,24 @@ section > .page2_container .page2_content {
   font-size: 1rem;
   color: #524fa1;
   font-weight: 800;
+}
+.page2_right {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+/*************
+*** Page2 ***
+*************/
+.page3_right {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.page3_right > img {
+  width: 544px;
+}
+
+.page3 {
+  background-color: rgb(248, 248, 255);
 }
